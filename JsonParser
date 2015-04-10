@@ -3,4 +3,6 @@ $conn = new mysqli("myServer", "myUser", "myPassword", "Northwind");
 
 $result = $conn->query("SELECT CompanyName, City, Country FROM Customers");
 
+var_dump($result);
+
 $conn->close();
