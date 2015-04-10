@@ -1,0 +1,6 @@
+
+$conn = new mysqli("myServer", "myUser", "myPassword", "Northwind");
+
+$result = $conn->query("SELECT CompanyName, City, Country FROM Customers");
+
+$conn->close();
